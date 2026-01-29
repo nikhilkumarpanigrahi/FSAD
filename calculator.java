@@ -3,7 +3,9 @@ public class calculator {
     public static int add(int a, int b) {
         return a + b;
     }
-    
+    public static int subtract(int a, int b) {
+        return a - b;
+    }
     public static int multiply(int a, int b) {
         return a * b;
     }
@@ -19,7 +21,9 @@ public class calculator {
         int a=sc.nextInt();
         int b=sc.nextInt();
         int result = add(a, b);
+        int subResult = subtract(a, b); 
         System.out.println("Sum: " + result);
+        System.out.println("Difference: " + subResult);
         result = multiply(a, b);
         System.out.println("Product: " + result);
         result = divide(a, b);
